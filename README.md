@@ -1,6 +1,6 @@
 # IPTV-Kekik
 
-- [KekikIPTV](https://raw.githubusercontent.com/ramazansancar/keyiflerolsun_IPTV_YenirMi/main/Kanallar/KekikAkademi.m3u)
+- [KekikIPTV](https://raw.githubusercontent.com/kerimmkirac/IPTV-kerim/main/Kanallar/KekikAkademi.m3u)
 
 ## PC İçin IPTV Önerisi
 
