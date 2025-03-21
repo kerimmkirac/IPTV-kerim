@@ -55,6 +55,6 @@ vlc --meta-title="NBA TV" \
 
 ## 💻 Katkı Sağlayanlar
 
-<a href="https://github.com/ramazansancar/keyiflerolsun_IPTV_YenirMi/graphs/contributors?selectedMetric=additions" target="_blank">
-  <img src="https://contrib.rocks/image?repo=ramazansancar/keyiflerolsun_IPTV_YenirMi" />
+<a href="https://github.com/kerimmkrac/IPTV-kerim/graphs/contributors?selectedMetric=additions" target="_blank">
+  <img src="https://contrib.rocks/image?repo=kerimmkirac/IPTV-kerim" />
 </a>
