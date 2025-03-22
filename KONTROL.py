@@ -58,7 +58,7 @@ class IPTVParser:
 ***
 
 > # [![Yayın Kontrolü](https://github.com/kerimmkirac/IPTV-kerim/actions/workflows/Kontrol.yml/badge.svg)](https://github.com/kerimmkirac/IPTV-kerim/actions/workflows/Kontrol.yml)
-> ### [Kanallar/KekikAkademi.m3u](https://github.com/kerimmkirac/IPTV-kerim/blob/main/Kanallar/KekikAkademi.m3u)
+> ### [Kanallar/kerim.m3u](https://github.com/kerimmkirac/IPTV-kerim/blob/main/Kanallar/kerim.m3u)
 
 ***
 
