@@ -14,7 +14,7 @@ on:
     paths:
       - KONTROL.py
       - .github/workflows/Kontrol.yml
-      - Kanallar/KekikAkademi.m3u
+      - Kanallar/kerim.m3u
 
 jobs:
   YayinKontrol:
