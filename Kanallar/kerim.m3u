@@ -311,7 +311,7 @@ https://fansports.pp.ua/hls/ss2.m3u8
 https://b0.b4c8d3e9f1a2b7c5d92.cfd/yayin1.m3u8
 
 #EXTINF:-1 tvg-name="beIN SPORTS 1 | B" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_beINSPORTS1_B" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/5rhmw31628798883.png" group-title="Spor",beIN SPORTS 1 B
-#EXTVLCOPT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5)
 #EXTVLCOPT:http-referrer=https://www.canlimaclar2245.sbs/
 a.strmrdr-cf-worker-b3b0eb3f3e.workers.dev
 
