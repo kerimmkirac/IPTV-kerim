@@ -1,57 +1,105 @@
-import requests
-import re
-from rich.console import Console
+# ! Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
-console = Console()
+from Kekik.cli    import konsol
+from Kekik        import satir_ekle
+from httpx        import Client
+from re           import compile, MULTILINE
+from os           import path, remove
 
 class IPTVParser:
-    def __init__(self, file_path):
-        self.file_path = file_path
-        self.kanallar = []
-        self.oturum = requests.Session()
-        self.oturum.headers.update({
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-        })
+    def __init__(self, dosya_yolu: str):
+        self.HATALAR = "HATALAR.md"
+        if path.isfile(self.HATALAR):
+            remove(self.HATALAR)
+
+        self.dosya_yolu   = dosya_yolu
+        self.kanallar     = []
+        self.hata_bulundu = False
+        self.oturum       = Client(verify=False, timeout=10)
 
     def dosya_parse(self):
-        with open(self.file_path, "r", encoding="utf-8") as file:
-            icerik = file.read()
+        with open(self.dosya_yolu, "r", encoding="utf-8") as dosya:
+            satirlar = dosya.readlines()
 
-        kanal_bloklari = re.findall(r'#EXTINF:-1([^\n]*)\n([^#\n]+)', icerik)
-        
-        for kanal_bilgi, kanal_url in kanal_bloklari:
-            kanal = {}
-            
-            # tvg-name özelliğini kanal adı olarak kullan
-            name_match = re.search(r'tvg-name="([^"]+)"', kanal_bilgi)
-            if name_match:
-                kanal['ad'] = name_match.group(1)
-            else:
-                continue  # tvg-name yoksa bu kanalı atla
-            
-            # Diğer özellikleri ekle
-            kanal['url'] = kanal_url.strip()
-            kanal['user-agent'] = None
-            
-            self.kanallar.append(kanal)
+        extinf_re     = compile(r'#EXTINF:-1 tvg-name="([^"]+)"')
+        url_re        = compile(r'^(https?://[^\s]+)', MULTILINE)
+        user_agent_re = compile(r'#EXTVLCOPT:http-user-agent=(.*)')
+        referer_re    = compile(r'#EXTVLCOPT:http-referrer=(.*)')
+
+        mevcut_kanal  = {}
+
+        for satir in satirlar:
+            if satir.startswith("#EXTINF"):
+                if match := extinf_re.search(satir):
+                    if mevcut_kanal:
+                        self.kanallar.append(mevcut_kanal)
+
+                    mevcut_kanal = {"ad": match[1], "user-agent": None, "referer": None}
+
+            elif satir.startswith("#EXTVLCOPT:http-user-agent"):
+                if match := user_agent_re.search(satir):
+                    mevcut_kanal["user-agent"] = match[1]
+
+            elif satir.startswith("#EXTVLCOPT:http-referrer"):
+                if match := referer_re.search(satir):
+                    mevcut_kanal["referer"] = match[1]
+
+            elif satir.startswith("http"):
+                if match := url_re.search(satir):
+                    mevcut_kanal["yayin"] = match[0]
+                    self.kanallar.append(mevcut_kanal)
+                    mevcut_kanal = {}
+
+        if mevcut_kanal:
+            self.kanallar.append(mevcut_kanal)
 
     def kanallar_kontrol(self):
+        satir_ekle(self.HATALAR, """
+***
+
+> # [![Yayın Kontrolü](https://github.com/kerimmkirac/IPTV-kerim/actions/workflows/Kontrol.yml/badge.svg)](https://github.com/kerimmkirac/IPTV-kerim/actions/workflows/Kontrol.yml)
+> ### [Kanallar/kerim.m3u](https://github.com/kerimmkirac/IPTV-kerim/blob/main/Kanallar/kerim.m3u)
+
+***
+
+| AD | HATA | YAYIN |
+|----|------|-------|
+        """.strip())
+
         for kanal in self.kanallar:
-            console.print(f"[~] Kontrol Ediliyor : {kanal['ad']}")
-            
+            print("\n")
+            konsol.log(f"[~] Kontrol Ediliyor : {kanal['ad']}")
+
+            if kanal["user-agent"]:
+                self.oturum.headers.update({"User-Agent": kanal["user-agent"]})
+
+            if kanal["referer"]:
+                self.oturum.headers.update({"Referer": kanal["referer"]})
+
             try:
-                response = self.oturum.get(kanal['url'], stream=True, timeout=5)
-                if response.status_code == 200:
-                    console.print(f"[+] Kontrol Edildi   : {kanal['ad']}")
-                else:
-                    console.print(f"[!] {response.status_code} » {kanal['url']} » {kanal['ad']}")
-            except Exception as e:
-                console.print(f"[!] Hata » {kanal['url']} » {kanal['ad']} » {str(e)}")
+                istek = self.oturum.get(kanal["yayin"])
+            except Exception as hata:
+                konsol.log(f"[!] {type(hata).__name__} : {hata}")
+                satir_ekle(self.HATALAR, f"|  **{kanal['ad']}**  |  `{type(hata).__name__}`  |  *{kanal['yayin']}*  |")
+                self.hata_bulundu = True
+                continue
+
+            if istek.status_code in [200, 301, 302, 307]:
+                konsol.log(f"[+] Kontrol Edildi   : {kanal['ad']}")
+            else:
+                konsol.log(f"[!] {istek.status_code} » {kanal['yayin']} » {kanal['ad']}")
+                satir_ekle(self.HATALAR, f"|  **{kanal['ad']}**  |  `{istek.status_code}`  |  *{kanal['yayin']}*  |")
+                self.hata_bulundu = True
+
+        if not self.hata_bulundu:
+            remove(self.HATALAR)
+            print("\n")
+            konsol.log("[+] Hata Bulunamadı.")
 
     def run(self):
         self.dosya_parse()
         self.kanallar_kontrol()
 
 if __name__ == "__main__":
-    parser = IPTVParser("kerim.m3u")
+    parser = IPTVParser("Kanallar/kerim.m3u")
     parser.run()
