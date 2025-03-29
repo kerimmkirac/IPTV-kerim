@@ -488,7 +488,9 @@ https://ythls.kekikakademi.org/youtube/channel/UCHumSHRFQ8skiHTY75sxytQ.m3u8
 #EXTINF:-1 tvg-name="Şaban" tvg-name="Turkish" tvg-country="TR" tvg-id="icerik_Saban" tvg-logo="https://i.ytimg.com/vi/FGL1GwoRRIw/mqdefault.jpg" group-title="İçerik",Şaban
 https://ythls.kekikakademi.org/youtube/channel/UCulg-mlXf314L1pemPqCVng.m3u8
 
-http://goplay.rdgtvbii.club:8080/bXyfT37WB8/xGqJAPYUvV/192060
+#EXTINF:-1 tvg-name="Flash" tvg-name="Turkish" tvg-country="TR" tvg-id="icerik_flash" tvg-logo="https://i.ytimg.com/vi/FGL1GwoRRIw/mqdefault.jpg" group-title="İçerik",flash
+http://goplay.rdgtvbii.club:8080/bXyfT37WB8/xGqJAPYUvV/191413
+
 
 #EXTINF:-1 tvg-name="Behzat Ç" tvg-name="Turkish" tvg-country="TR" tvg-id="icerik_BehzatC" tvg-logo="https://img.youtube.com/vi/V6_46VDV1dY/maxresdefault.jpg" group-title="İçerik",Behzat Ç
 https://ythls.kekikakademi.org/youtube/channel/UCH3WnhFSx9r850HJRRs16lQ.m3u8
