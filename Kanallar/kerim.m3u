@@ -204,40 +204,40 @@ https://ythls.kekikakademi.org/youtube/channel/UCai9a-7GjCkWiaV7cCkIMJg.m3u8
 
 
 # * » Sinema « * #
-#EXTINF:-1 tvg-id="Sinema_BeINSeriesSciFi" tvg-name="|TR| beIN Series SCI FI FHD" tvg-language="Turkish" tvg-country="TR" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_series_sc-fi.png" group-title="TR/ Digitürk Sinema",|TR| beIN Series SCI FI FHD
+#EXTINF:-1 tvg-name="BeinSeries" tvg-id="Sinema_BeINSeriesSciFi" tvg-name="|TR| beIN Series SCI FI FHD" tvg-language="Turkish" tvg-country="TR" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_series_sc-fi.png" group-title="TR/ Digitürk Sinema",|TR| beIN Series SCI FI FHD
 http://goplay.rdgtvbii.club:8080/bXyfT37WB8/xGqJAPYUvV/457101
 
-#EXTINF:-1 tvg-id="Sinema_BeINSeriesDrama" tvg-name="|TR| beIN Series Drama FHD" tvg-language="Turkish" tvg-country="TR" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_series_drama.png" group-title="TR/ Digitürk Sinema",|TR| beIN Series Drama FHD
+#EXTINF:-1  tvg-name="BeinSinema" tvg-id="Sinema_BeINSeriesDrama" tvg-name="|TR| beIN Series Drama FHD" tvg-language="Turkish" tvg-country="TR" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_series_drama.png" group-title="TR/ Digitürk Sinema",|TR| beIN Series Drama FHD
 http://goplay.rdgtvbii.club:8080/bXyfT37WB8/xGqJAPYUvV/457102
 
-#EXTINF:-1 tvg-id="Sinema_RelaxTV1" tvg-name="|TR| Relax TV Sinema  1 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  1 HD
+#EXTINF:-1  tvg-name="RelaxSinema1" tvg-id="Sinema_RelaxTV1" tvg-name="|TR| Relax TV Sinema  1 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  1 HD
 http://goplay.rdgtvbii.club:8080/bXyfT37WB8/xGqJAPYUvV/452845
 
-#EXTINF:-1 tvg-id="Sinema_RelaxTV2" tvg-name="|TR| Relax TV Sinema  2 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  2 HD
+#EXTINF:-1 tvg-name="RelaxSinema2" tvg-id="Sinema_RelaxTV2" tvg-name="|TR| Relax TV Sinema  2 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  2 HD
 http://goplay.rdgtvbii.club:8080/bXyfT37WB8/xGqJAPYUvV/452846
 
-#EXTINF:-1 tvg-id="Sinema_RelaxTV3" tvg-name="|TR| Relax TV Sinema  3 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  3 HD
+#EXTINF:-1  tvg-name="RelaxSinema3" tvg-id="Sinema_RelaxTV3" tvg-name="|TR| Relax TV Sinema  3 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  3 HD
 http://goplay.rdgtvbii.club:8080/bXyfT37WB8/xGqJAPYUvV/452847
 
-#EXTINF:-1 tvg-id="Sinema_RelaxTV4" tvg-name="|TR| Relax TV Sinema  4 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  4 HD
+#EXTINF:-1 tvg-name="RelaxSinema4" tvg-id="Sinema_RelaxTV4" tvg-name="|TR| Relax TV Sinema  4 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  4 HD
 http://goplay.rdgtvbii.club:8080/bXyfT37WB8/xGqJAPYUvV/452848
 
-#EXTINF:-1 tvg-id="Sinema_RelaxTV5" tvg-name="|TR| Relax TV Sinema  5 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  5 HD
+#EXTINF:-1  tvg-name="RelaxSinema5" tvg-id="Sinema_RelaxTV5" tvg-name="|TR| Relax TV Sinema  5 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  5 HD
 http://goplay.rdgtvbii.club:8080/bXyfT37WB8/xGqJAPYUvV/452849
 
-#EXTINF:-1 tvg-id="Sinema_RelaxTV6" tvg-name="|TR| Relax TV Sinema  6 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  6 HD
+#EXTINF:-1  tvg-name="RelaxSinema6" tvg-id="Sinema_RelaxTV6" tvg-name="|TR| Relax TV Sinema  6 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  6 HD
 http://goplay.rdgtvbii.club:8080/bXyfT37WB8/xGqJAPYUvV/452850
 
-#EXTINF:-1 tvg-id="Sinema_RelaxTV7" tvg-name="|TR| Relax TV Sinema  7 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  7 HD
+#EXTINF:-1 tvg-name="RelaxSinema7" tvg-id="Sinema_RelaxTV7" tvg-name="|TR| Relax TV Sinema  7 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  7 HD
 http://goplay.rdgtvbii.club:8080/bXyfT37WB8/xGqJAPYUvV/452851
 
-#EXTINF:-1 tvg-id="Sinema_RelaxTV8" tvg-name="|TR| Relax TV Sinema  8 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  8 HD
+#EXTINF:-1  tvg-name="RelaxSinema8" tvg-id="Sinema_RelaxTV8" tvg-name="|TR| Relax TV Sinema  8 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  8 HD
 http://goplay.rdgtvbii.club:8080/bXyfT37WB8/xGqJAPYUvV/452852
 
-#EXTINF:-1 tvg-id="Sinema_RelaxTV9" tvg-name="|TR| Relax TV Sinema  9 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  9 HD
+#EXTINF:-1 tvg-name="RelaxSinema9" tvg-id="Sinema_RelaxTV9" tvg-name="|TR| Relax TV Sinema  9 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  9 HD
 http://goplay.rdgtvbii.club:8080/bXyfT37WB8/xGqJAPYUvV/452853
 
-#EXTINF:-1 tvg-id="Sinema_RelaxTV10" tvg-name="|TR| Relax TV Sinema  10 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  10 HD
+#EXTINF:-1  tvg-name="RelaxSinema10" tvg-id="Sinema_RelaxTV10" tvg-name="|TR| Relax TV Sinema  10 HD" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/tv-sinema.png" group-title="TR/ Relax TV Sinema",|TR| Relax TV Sinema  10 HD
 http://goplay.rdgtvbii.club:8080/bXyfT37WB8/xGqJAPYUvV/452854
 
 
