@@ -21,25 +21,21 @@ class TRGoals:
             raise ValueError("M3U dosyasında 'trgoals' içeren referer domain bulunamadı!")
 
     def trgoals_domaini_al(self):
-        istek        = self.httpx.post("http://10.0.2.0:1221/api/v1/cf", json={"url": "https://bit.ly/m/taraftarium24w"})
-        # redirect_url = re.search(r"href=\"([^\"]*redirect[^\"]*)\"", istek.text)[1]
-        secici       = Selector(istek.text)
-        redirect_url = secici.xpath("(//section[@class='links']/a)[1]/@href").get()
-
+        redirect_url = "https://bit.ly/m/taraftarium24w"
         while "bit.ly" in redirect_url:
             redirect_url = self.redirect_gec(redirect_url)
-
         return redirect_url
 
-    def redirect_gec(self, redirect_url:str):
-        istek        = self.httpx.post("http://10.0.2.0:1221/api/v1/url", json={"url": redirect_url})
-        redirect_url = istek.json().get("url")
-
-        domain = redirect_url[:-1] if redirect_url.endswith("/") else redirect_url
-
+    def redirect_gec(self, redirect_url: str):
+        konsol.log(f"[cyan][~] redirect_gec çağrıldı: {redirect_url}")
+        try:
+            response = self.httpx.get(redirect_url, follow_redirects=True)
+        except Exception as e:
+            raise ValueError(f"Redirect sırasında hata oluştu: {e}")
+    
+        domain = str(response.url).strip("/")
         if "error" in domain:
             raise ValueError("Redirect domain hatalı..")
-
         return domain
 
     def yeni_domaini_al(self, eldeki_domain: str) -> str:
@@ -81,15 +77,13 @@ class TRGoals:
         with open(self.m3u_dosyasi, "r") as dosya:
             m3u_icerik = dosya.read()
 
-        if not (eski_yayin_url := re.search(r'https?:\/\/[^\/]+\.(workers\.dev|shop|cfd)\/?', m3u_icerik)):
+        if not (eski_yayin_url := re.search(r'https?:\/\/[^\/]+\.(workers\.dev|shop|click)\/?', m3u_icerik)):
             raise ValueError("M3U dosyasında eski yayın URL'si bulunamadı!")
 
         eski_yayin_url = eski_yayin_url[0]
         konsol.log(f"[yellow][~] Eski Yayın URL : {eski_yayin_url}")
 
-        kimlik   = self.httpx.post("http://10.0.2.0:1221/api/v1/kimlik", json={"url": yeni_domain}).json()
-        self.httpx.cookies.update(kimlik["cookies"])
-        self.httpx.headers.update(kimlik["headers"])
+        # API çağrısı kaldırıldı, doğrudan istek yapılıyor
         response = self.httpx.get(kontrol_url, follow_redirects=True)
 
         if not (yayin_ara := re.search(r'var baseurl = "(https?:\/\/[^"]+)"', response.text)):
