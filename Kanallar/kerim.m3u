@@ -45,7 +45,7 @@ https://dogus-live.daioncdn.net/ntv/ntv_720p.m3u8
 https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8
 
 #EXTINF:-1 tvg-name="A Haber" tvg-language="Turkish" tvg-country="TR" tvg-id="Haber_AHaber" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7c/Ahaber_Logo.png" group-title="Haber",A Haber
-https://trkvz-live.ercdn.net/ahaberhd/ahaberhd_720p-1745087700.ts?st=IeMeveSPuLdL9zepy43dAQ&e=1745132932
+https://trkvz-live.ercdn.net/ahaberhd/ahaberhd_720p.m3u8?st=7vwGIyKZdAlMbo6-i2IiEw&e=1745134672
 # ? https://ythls.kekikakademi.org/youtube/channel/UCKQhfw-lzz0uKnE1fY1PsAA.m3u8
 
 #EXTINF:-1 tvg-name="Haber Global" tvg-language="Turkish" tvg-country="TR" tvg-id="Haber_HaberGlobal" tvg-logo="https://blutv-images.mncdn.com/q/t/i/bluv2/100/750x750/603dfe0f866ac31798b3f4fa" group-title="Haber",Haber Global
@@ -146,7 +146,7 @@ https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_720p.m3u8
 https://demiroren-live.daioncdn.net/teve2/teve2_720p.m3u8
 
 #EXTINF:-1 tvg-name="A2" tvg-language="Turkish" tvg-country="TR" tvg-id="Genel_A2" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/e/e8/A2_logosu.jpg?20161129163613" group-title="Genel",A2
-https://trkvz-live.daioncdn.net/a2tv/a2tv_1080p-1745087150000.ts?e=1745132743&st=Y_gJp4yFH_bHEHy5HuqSAg
+https://trkvz.daioncdn.net/a2tv/a2tv_1080p.m3u8?e=1745134795&st=0FobCA57HA9P0iNgiKFtcw&sid=7c84xgg2i5j1&app=59363a60-be96-4f73-9eff-355d0ff2c758&ce=3
 
 #EXTINF:-1 tvg-name="TV 4" tvg-language="Turkish" tvg-country="TR" tvg-id="Genel_TV4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/bc/Tv4_logo.png" group-title="Genel",TV 4
 https://turkmedya-live.ercdn.net/tv4/tv4.m3u8
