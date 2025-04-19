@@ -443,8 +443,6 @@ https://listen.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="PowerTürk Taptaze" tvg-language="Turkish" tvg-country="TR" tvg-id="Muzik_PowerTurkTaptaze" tvg-logo="https://cdn.powergroup.com.tr/image/500x500/powerapp/channels/v3/logo_2534.png" group-title="Müzik",PowerTürk Taptaze
 https://listen.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-name="Milyon TV" tvg-language="Turkish" tvg-country="TR" tvg-id="Muzik_MilyonTV" tvg-logo="https://blutv-images.mncdn.com/q/t/i/bluv2/100/750x750/60900db7866ac318488bc30f" group-title="Müzik",Milyon TV
-https://sosyoapp-live.cdnnew.com/sosyo/buraya-bir-isim-verin.m3u8
 
 #EXTINF:-1 tvg-name="Kral Pop" tvg-language="Turkish" tvg-country="TR" tvg-id="Muzik_KralPop" tvg-logo="https://img-puhutv.mncdn.com/media/img/content/23-01/26/kral.png" group-title="Müzik",Kral Pop
 https://dogus-live.daioncdn.net/kralpoptv/playlist.m3u8
@@ -460,12 +458,6 @@ https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e18f
 
 #EXTINF:-1 tvg-name="NumberOne Damar" tvg-language="Turkish" tvg-country="TR" tvg-id="Muzik_NumberOneDamar" tvg-logo="https://www.numberone.com.tr/wp-content/uploads/2017/07/N1_TR_Damar.png" group-title="Müzik",NumberOne Damar
 https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e198784bdc_1/playlist.m3u8
-
-#EXTINF:-1 tvg-name="NumberOne Dance" tvg-language="Turkish" tvg-country="TR" tvg-id="Muzik_NumberOneDance" tvg-logo="https://www.numberone.com.tr/wp-content/uploads/2015/12/N1_Dance-1-768x768.png" group-title="Müzik",NumberOne Dance
-https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2aa8acf44_1/playlist.m3u8
-
-#EXTINF:-1 tvg-name="Tatlıses TV" tvg-language="Turkish" tvg-country="TR" tvg-id="Muzik_TatlisesTV" tvg-logo="https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/tatlises-tv-buyuk.png" group-title="Müzik",Tatlıses TV
-https://live.artidijitalmedya.com/artidijital_tatlisestv/tatlisestv/playlist.m3u8
 
 #EXTINF:-1 tvg-name="MTV Biggest Pop" tvg-language="English" tvg-country="USA" tvg-id="Muzik_MTVBiggestPop" tvg-logo="https://images.pluto.tv/channels/5d14fd1a252d35decbc4080c/colorLogoPNG.png" group-title="Müzik",MTV Biggest Pop
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d14fd1a252d35decbc4080c/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2a02e7-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=db3aa987-9f35-4664-b523-5fe34623b36c
