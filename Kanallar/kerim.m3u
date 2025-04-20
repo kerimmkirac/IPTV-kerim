@@ -28,7 +28,7 @@ https://tv-trtworld.medya.trt.com.tr/master_720.m3u8
 # * » Sinema « * #
 
 
-#EXTINF:-1 tvg-name="Sinema Tv" tvg-language="Turkish" tvg-country="TR" tvg-id="Sinema_TV" tvg-logo="https://sinematv.com.tr/content/logo/SINEMATV.png?v=1.0.0.68" group-title="Sinema",Sinema Tv
+#EXTINF:-1 tvg-name="Sinema Tv" tvg-language="Turkish" tvg-country="TR" tvg-id="Sinema_TV" tvg-logo="https://brsottvsc01.tvplus.com.tr:33207/CPS/images/universal/film/logo/202002/20200203/20200203234455583qbu_op_0_XL.png" group-title="Sinema",Sinema Tv
 https://ottcdn.kablowebtv.net/live_turksat_sub/sinematv_stream/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8yMC8yMDI1IDQ6NTY6MDEgUE0maGFzaF92YWx1ZT1FMkhEcDlCTW9senYxR1kvdW9MTVF3PT0mdmFsaWRtaW51dGVzPTI4ODAmaWQ9MDkzZDcyMGEtNTAyYy00MWVkLWE4MGYtMmI4MTY5ODRmYjk1LDg5NzQxZmVjLTFkMzMtNGMwMC1hZmNkLTNmZGFmZTBiNmEyZCwxNTJiZDUzOS02MjIwLTQ0MjctYTkxNS1iZjRiZDA2OGQ3ZTgsYTY5OWI4M2YtODI2Yi00ZDk5LTkzNjEtYzhhMzEzMjE4ZDQ2LDAsOjpmZmZmOjEwLjAuMC42
 
 #EXTINF:-1 tvg-name="Sinema Aksiyon" tvg-language="Turkish" tvg-country="TR" tvg-id="Sinema_Aksiyon" tvg-logo="https://i0.wp.com/www.yeniyeniseyler.com/wp-content/uploads/2021/07/Sinema-Aksiyon-2021-Yeniler.png?fit=500,750&ssl=1&resize=350,200" group-title="Sinema",Sinema Aksiyon
