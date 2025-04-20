@@ -213,10 +213,10 @@ https://trkvz-live.daioncdn.net/minikago/minikago.m3u8
 https://trkvz-live.daioncdn.net/minikago_cocuk/minikago_cocuk.m3u8
 
 #EXTINF:-1 tvg-name="Boomerang" tvg-language="English" tvg-country="USA" tvg-id="CizgiFilm_Boomerang" tvg-logo="https://img.youtube.com/vi/IJbbpAhjboI/maxresdefault.jpg" group-title="ÇizgiFilm",Boomerang
-https://ythls.kekikakademi.org/youtube/channel/UCmst562fALOY2cKb4IFgqEg.m3u8
+http://koprulu2.global.ssl.fastly.net/yt.m3u8/?id=_XeGYNTiuSM.m3u8
 
 #EXTINF:-1 tvg-name="Cartoonito TV" tvg-language="Turkish" tvg-country="TR" tvg-id="CizgiFilm_CartoonitoTV" tvg-logo="https://blutv-images.mncdn.com/q/t/i/bluv2/100/500x500/64f57b42866ac307e484249e" group-title="ÇizgiFilm",Cartoonito TV
-https://ythls.kekikakademi.org/youtube/channel/UCai9a-7GjCkWiaV7cCkIMJg.m3u8
+http://koprulu2.global.ssl.fastly.net/yt.m3u8/?id=YncCAA-D9K4.m3u8
 # ? https://cartoonito.blutv.com/blutv_cartoonito/smil:cartoonito.smil/playlist.m3u8
 
 
