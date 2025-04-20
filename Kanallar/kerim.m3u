@@ -25,7 +25,32 @@ https://tv-trtavaz.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 tvg-name="TRT World" tvg-language="English" tvg-country="USA" tvg-id="TRT_World" tvg-logo="https://cdn-i.pr.trt.com.tr/trttv/w750/h750/q100/7834584.png" group-title="TRT",TRT World
 https://tv-trtworld.medya.trt.com.tr/master_720.m3u8
 
+# * » Sinema « * #
 
+
+#EXTINF:-1 tvg-name="Sinema Tv" tvg-language="Turkish" tvg-country="TR" tvg-id="Sinema_TV" tvg-logo="https://sinematv.com.tr/content/logo/SINEMATV.png?v=1.0.0.68" group-title="Sinema",Sinema Tv
+https://ottcdn.kablowebtv.net/live_turksat_sub/sinematv_stream/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8yMC8yMDI1IDQ6NTY6MDEgUE0maGFzaF92YWx1ZT1FMkhEcDlCTW9senYxR1kvdW9MTVF3PT0mdmFsaWRtaW51dGVzPTI4ODAmaWQ9MDkzZDcyMGEtNTAyYy00MWVkLWE4MGYtMmI4MTY5ODRmYjk1LDg5NzQxZmVjLTFkMzMtNGMwMC1hZmNkLTNmZGFmZTBiNmEyZCwxNTJiZDUzOS02MjIwLTQ0MjctYTkxNS1iZjRiZDA2OGQ3ZTgsYTY5OWI4M2YtODI2Yi00ZDk5LTkzNjEtYzhhMzEzMjE4ZDQ2LDAsOjpmZmZmOjEwLjAuMC42
+
+#EXTINF:-1 tvg-name="Sinema Aksiyon" tvg-language="Turkish" tvg-country="TR" tvg-id="Sinema_Aksiyon" tvg-logo="https://i0.wp.com/www.yeniyeniseyler.com/wp-content/uploads/2021/07/Sinema-Aksiyon-2021-Yeniler.png?fit=500,750&ssl=1&resize=350,200" group-title="Sinema",Sinema Aksiyon
+https://ottcdn.kablowebtv.net/live_turksat_sub/sinemaaksiyon_stream/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8yMC8yMDI1IDQ6NTY6MDEgUE0maGFzaF92YWx1ZT1FMkhEcDlCTW9senYxR1kvdW9MTVF3PT0mdmFsaWRtaW51dGVzPTI4ODAmaWQ9MDkzZDcyMGEtNTAyYy00MWVkLWE4MGYtMmI4MTY5ODRmYjk1LDg5NzQxZmVjLTFkMzMtNGMwMC1hZmNkLTNmZGFmZTBiNmEyZCwxNTJiZDUzOS02MjIwLTQ0MjctYTkxNS1iZjRiZDA2OGQ3ZTgsYTY5OWI4M2YtODI2Yi00ZDk5LTkzNjEtYzhhMzEzMjE4ZDQ2LDAsOjpmZmZmOjEwLjAuMC42
+
+#EXTINF:-1 tvg-name="Sinema Yerli" tvg-language="Turkish" tvg-country="TR" tvg-id="Sinema_Yerli" tvg-logo="https://itv224234.tmp.tivibu.com.tr:6430/images/prevueposter/20241026175750.jpg" group-title="Sinema",Sinema Yerli
+https://ottcdn.kablowebtv.net/live_turksat_sub3/sinemayerli_stream/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8yMC8yMDI1IDQ6NTY6MDEgUE0maGFzaF92YWx1ZT1FMkhEcDlCTW9senYxR1kvdW9MTVF3PT0mdmFsaWRtaW51dGVzPTI4ODAmaWQ9MDkzZDcyMGEtNTAyYy00MWVkLWE4MGYtMmI4MTY5ODRmYjk1LDg5NzQxZmVjLTFkMzMtNGMwMC1hZmNkLTNmZGFmZTBiNmEyZCwxNTJiZDUzOS02MjIwLTQ0MjctYTkxNS1iZjRiZDA2OGQ3ZTgsYTY5OWI4M2YtODI2Yi00ZDk5LTkzNjEtYzhhMzEzMjE4ZDQ2LDAsOjpmZmZmOjEwLjAuMC42
+
+#EXTINF:-1 tvg-name="Sinema Aile" tvg-language="Turkish" tvg-country="TR" tvg-id="Sinema_Aile" tvg-logo="https://itv224186.tmp.tivibu.com.tr:6430/images/prevueposter/20241021309418.jpg" group-title="Sinema",Sinema Aile
+https://ottcdn.kablowebtv.net/live_turksat_sub/sinemaaile_stream/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8yMC8yMDI1IDQ6NTY6MDEgUE0maGFzaF92YWx1ZT1FMkhEcDlCTW9senYxR1kvdW9MTVF3PT0mdmFsaWRtaW51dGVzPTI4ODAmaWQ9MDkzZDcyMGEtNTAyYy00MWVkLWE4MGYtMmI4MTY5ODRmYjk1LDg5NzQxZmVjLTFkMzMtNGMwMC1hZmNkLTNmZGFmZTBiNmEyZCwxNTJiZDUzOS02MjIwLTQ0MjctYTkxNS1iZjRiZDA2OGQ3ZTgsYTY5OWI4M2YtODI2Yi00ZDk5LTkzNjEtYzhhMzEzMjE4ZDQ2LDAsOjpmZmZmOjEwLjAuMC42
+
+#EXTINF:-1 tvg-name="Sinema 1001" tvg-language="Turkish" tvg-country="TR" tvg-id="Sinema_1001" tvg-logo="https://gbzeottvsc31.tvplus.com.tr:33207/CPS/images/universal/film/logo/202001/20200127/202001271640304366wa_op_0_XL.png" group-title="Sinema",Sinema 1001
+https://ottcdn.kablowebtv.net/live_turksat_sub/sinema1001_stream/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8yMC8yMDI1IDQ6NTY6MDEgUE0maGFzaF92YWx1ZT1FMkhEcDlCTW9senYxR1kvdW9MTVF3PT0mdmFsaWRtaW51dGVzPTI4ODAmaWQ9MDkzZDcyMGEtNTAyYy00MWVkLWE4MGYtMmI4MTY5ODRmYjk1LDg5NzQxZmVjLTFkMzMtNGMwMC1hZmNkLTNmZGFmZTBiNmEyZCwxNTJiZDUzOS02MjIwLTQ0MjctYTkxNS1iZjRiZDA2OGQ3ZTgsYTY5OWI4M2YtODI2Yi00ZDk5LTkzNjEtYzhhMzEzMjE4ZDQ2LDAsOjpmZmZmOjEwLjAuMC42
+
+#EXTINF:-1 tvg-name="Sinema Komedi" tvg-language="Turkish" tvg-country="TR" tvg-id="Sinema_Komedi" tvg-logo="https://tvepg.eu/img/turkey/logo/sinema_komedi.png" group-title="Sinema",Sinema Komedi
+https://ottcdn.kablowebtv.net/live_turksat_sub/sinemakomedi_stream/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8yMC8yMDI1IDQ6NTY6MDEgUE0maGFzaF92YWx1ZT1FMkhEcDlCTW9senYxR1kvdW9MTVF3PT0mdmFsaWRtaW51dGVzPTI4ODAmaWQ9MDkzZDcyMGEtNTAyYy00MWVkLWE4MGYtMmI4MTY5ODRmYjk1LDg5NzQxZmVjLTFkMzMtNGMwMC1hZmNkLTNmZGFmZTBiNmEyZCwxNTJiZDUzOS02MjIwLTQ0MjctYTkxNS1iZjRiZDA2OGQ3ZTgsYTY5OWI4M2YtODI2Yi00ZDk5LTkzNjEtYzhhMzEzMjE4ZDQ2LDAsOjpmZmZmOjEwLjAuMC42
+
+#EXTINF:-1 tvg-name="FX" tvg-language="Turkish" tvg-country="TR" tvg-id="Sinema_FX" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/2560px-FX_International_logo.svg.png" group-title="Sinema",FX
+https://ottcdn.kablowebtv.net/live_turksat_sub/fx_stream/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8yMC8yMDI1IDQ6NTY6MDEgUE0maGFzaF92YWx1ZT1FMkhEcDlCTW9senYxR1kvdW9MTVF3PT0mdmFsaWRtaW51dGVzPTI4ODAmaWQ9MDkzZDcyMGEtNTAyYy00MWVkLWE4MGYtMmI4MTY5ODRmYjk1LDg5NzQxZmVjLTFkMzMtNGMwMC1hZmNkLTNmZGFmZTBiNmEyZCwxNTJiZDUzOS02MjIwLTQ0MjctYTkxNS1iZjRiZDA2OGQ3ZTgsYTY5OWI4M2YtODI2Yi00ZDk5LTkzNjEtYzhhMzEzMjE4ZDQ2LDAsOjpmZmZmOjEwLjAuMC42
+
+#EXTINF:-1 tvg-name="Epic Drama" tvg-language="Turkish" tvg-country="TR" tvg-id="Sinema_Epicdrama" tvg-logo="https://www.kuki.cz/media/cache/c1/85/c18545e42edfefacae2ffbe30ed12bf9.png" group-title="Sinema",Epic Drama
+https://ottcdn.kablowebtv.net/live_turksat_sub/epicdramahd_stream/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8yMC8yMDI1IDQ6NTY6MDEgUE0maGFzaF92YWx1ZT1FMkhEcDlCTW9senYxR1kvdW9MTVF3PT0mdmFsaWRtaW51dGVzPTI4ODAmaWQ9MDkzZDcyMGEtNTAyYy00MWVkLWE4MGYtMmI4MTY5ODRmYjk1LDg5NzQxZmVjLTFkMzMtNGMwMC1hZmNkLTNmZGFmZTBiNmEyZCwxNTJiZDUzOS02MjIwLTQ0MjctYTkxNS1iZjRiZDA2OGQ3ZTgsYTY5OWI4M2YtODI2Yi00ZDk5LTkzNjEtYzhhMzEzMjE4ZDQ2LDAsOjpmZmZmOjEwLjAuMC42
 
 # * » Haber « * #
 #EXTINF:-1 tvg-name="TRT Haber" tvg-language="Turkish" tvg-country="TR" tvg-id="Haber_TRT" tvg-logo="https://cdn-i.pr.trt.com.tr/trttv/w750/h750/q100/8971102.png" group-title="Haber",TRT Haber
