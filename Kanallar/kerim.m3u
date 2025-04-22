@@ -60,9 +60,7 @@ https://tv-trthaber.medya.trt.com.tr/master_720.m3u8
 https://ciner-live.daioncdn.net/haberturktv/haberturktv_720p.m3u8
 
 #EXTINF:-1 tvg-name="CNN Türk" tvg-language="Turkish" tvg-country="TR" tvg-id="Haber_CNNTurk" tvg-logo="https://blutv-images.mncdn.com/q/t/i/bluv2/100/750x750/61236013866ac319e8143500" group-title="Haber",CNN Türk
-https://b.fulltvizle.com/cnn/index.m3u8
-# ? http://stream.tvcdn.net/haber/cnn-turk.m3u8
-
+https://ottcdn.kablowebtv.net/live_turksat_sub3/cnnturk_stream/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8yMi8yMDI1IDI6MDI6NTMgUE0maGFzaF92YWx1ZT1tZWtRM3I2REpoY2VXcWtmKzhjUTZnPT0mdmFsaWRtaW51dGVzPTI4ODAmaWQ9MDkzZDcyMGEtNTAyYy00MWVkLWE4MGYtMmI4MTY5ODRmYjk1LDg5NzQxZmVjLTFkMzMtNGMwMC1hZmNkLTNmZGFmZTBiNmEyZCwxNTJiZDUzOS02MjIwLTQ0MjctYTkxNS1iZjRiZDA2OGQ3ZTgsYTY5OWI4M2YtODI2Yi00ZDk5LTkzNjEtYzhhMzEzMjE4ZDQ2LDAsOjpmZmZmOjEwLjAuMC4y
 #EXTINF:-1 tvg-name="NTV" tvg-language="Turkish" tvg-country="TR" tvg-id="Haber_NTV" tvg-logo="https://blutv-images.mncdn.com/q/t/i/bluv2/100/750x750/56a72d98058d024d98970264" group-title="Haber",NTV
 https://dogus-live.daioncdn.net/ntv/ntv_720p.m3u8
 
