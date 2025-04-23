@@ -30,20 +30,24 @@ class MonoTV:
         with open(self.m3u_dosyasi, "r", encoding="utf-8") as f:
             m3u_icerik = f.read()
 
-        if not (eski_yayin_url := re.search(r'https?:\/\/[^\/]+\.(workers\.dev|shop|click|cfd)\/?', m3u_icerik)):
-            raise ValueError("M3U dosyasında eski yayın URL'si bulunamadı!")
-
-        eski_yayin_url = eski_yayin_url[0]
-        log.log(f"[yellow][~] Eski Yayın URL : {eski_yayin_url}")
+        # Sadece referrer'ı monotv523.com olan satırları bul
+        pattern = r'(https?:\/\/[^\/]+\.(?:workers\.dev|shop|click|cfd)\/[^\s]+\.m3u8[^\n]*\n#EXTVLCOPT:http-referrer=https:\/\/monotv523\.com\/)'
+        
+        if not (eski_yayinlar := re.findall(pattern, m3u_icerik)):
+            raise ValueError("M3U dosyasında monotv523 referanslı yayın URL'leri bulunamadı!")
 
         yeni_yayin_url = self.yayin_urlini_al()
 
-        yeni_m3u_icerik = m3u_icerik.replace(eski_yayin_url, yeni_yayin_url)
+        for eski_yayin in set(eski_yayinlar):  # Tekrarları önlemek için set kullanıyoruz
+            log.log(f"[yellow][~] Eski Yayın URL : {eski_yayin.split()[0]}")
+            # Yalnızca URL kısmını değiştir (referrer kısmını koru)
+            yeni_satir = eski_yayin.replace(eski_yayin.split()[0], yeni_yayin_url)
+            m3u_icerik = m3u_icerik.replace(eski_yayin, yeni_satir)
 
         with open(self.m3u_dosyasi, "w", encoding="utf-8") as f:
-            f.write(yeni_m3u_icerik)
+            f.write(m3u_icerik)
 
-        log.log(f"[green][✓] M3U dosyası başarıyla güncellendi.")
+        log.log(f"[green][✓] M3U dosyası başarıyla güncellendi. Sadece monotv523.com referanslı yayınlar değiştirildi.")
 
 if __name__ == "__main__":
     guncelle = MonoTV("Kanallar/kerim.m3u")
