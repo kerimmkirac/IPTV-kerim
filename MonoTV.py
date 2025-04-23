@@ -1,7 +1,6 @@
-
 import re
 from httpx import Client
-from Kekik.cli import konsol as log  
+from Kekik.cli import konsol as log  # print ile değiştirilebilir
 
 class MonoTV:
     def __init__(self, m3u_dosyasi):
@@ -42,18 +41,27 @@ class MonoTV:
         if not eslesmeler:
             raise ValueError("Referer'i monotv olan yayınlar bulunamadı!")
 
-        log.log(f"[yellow][~] Toplam {len(eslesmeler)} adet yayın bulundu, güncelleniyor...")
+        log.log(f"[yellow][~] Toplam {len(eslesmeler)} adet yayın bulundu, kontrol ediliyor...")
+
+        degisti_mi = False
+        yeni_icerik = m3u_icerik
 
         for eslesme in eslesmeler:
             eski_link = eslesme[3]
             yeni_link = re.sub(r'https?://[^/]+', yeni_yayin_url, eski_link)
-            log.log(f"[blue]• {eski_link} → {yeni_link}")
-            m3u_icerik = m3u_icerik.replace(eski_link, yeni_link)
+            if eski_link != yeni_link:
+                log.log(f"[blue]• Güncellendi: {eski_link} → {yeni_link}")
+                yeni_icerik = yeni_icerik.replace(eski_link, yeni_link)
+                degisti_mi = True
+            else:
+                log.log(f"[gray]• Zaten güncel: {eski_link}")
 
-        with open(self.m3u_dosyasi, "w", encoding="utf-8") as f:
-            f.write(m3u_icerik)
-
-        log.log(f"[green][✓] Tüm monotv refererli yayın URL'leri başarıyla güncellendi.")
+        if degisti_mi:
+            with open(self.m3u_dosyasi, "w", encoding="utf-8") as f:
+                f.write(yeni_icerik)
+            log.log(f"[green][✓] M3U dosyası güncellendi.")
+        else:
+            log.log(f"[green][✓] Tüm yayınlar zaten günceldi, dosya yazılmadı.")
 
 if __name__ == "__main__":
     guncelle = MonoTV("Kanallar/kerim.m3u")
