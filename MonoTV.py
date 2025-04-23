@@ -56,5 +56,5 @@ class MonoTV:
         log.log(f"[green][✓] Tüm monotv refererli yayın URL'leri başarıyla güncellendi.")
 
 if __name__ == "__main__":
-    guncelle = MonoTV("denemeaga.m3u")
+    guncelle = MonoTV("Kanallar/kerim.m3u")
     guncelle.m3u_guncelle()
