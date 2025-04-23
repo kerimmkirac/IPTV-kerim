@@ -1,6 +1,6 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
-name: Domain Değişiklik Kontrolü
+name: TRGoals & MonoTV Yayın Kontrolü
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}
@@ -9,13 +9,11 @@ concurrency:
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/15 * * * *'
-
+    - cron: '*/10 * * * *'  # Her 10 dakikada bir çalışır
 
 jobs:
   DomainKontrol:
     runs-on: ubuntu-latest
-    #runs-on: self-hosted
 
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -24,36 +22,40 @@ jobs:
       contents: write
 
     steps:
-      - name : Depo Kontrolü
-        uses : actions/checkout@v4.2.2
+      - name: Depoyu Klonla
+        uses: actions/checkout@v4.2.2
 
-      - name : Python 3.11.8 Yükle
-        uses : actions/setup-python@v5.3.0
-        with :
+      - name: Python 3.11.8 Yükle
+        uses: actions/setup-python@v5.3.0
+        with:
           python-version: 3.11.8
 
-      - name : Python Sürümünü Göster
-        run  : python -c "import sys; print(sys.version)"
+      - name: Python Sürümünü Göster
+        run: python -c "import sys; print(sys.version)"
 
-      - name : Gereksinimleri Yükle
-        run  : |
+      - name: Gereksinimleri Kur
+        run: |
           python -m pip install --upgrade pip
           pip install -U setuptools wheel Kekik httpx parsel
 
-      - name : Betiği Çalıştır
-        run  : |
+      - name: TRGoals.py Çalıştır
+        run: |
           python TRGoals.py
 
-      - name : Değişiklik Kontrolü
-        id   : degisiklik_kontrol
-        run  : |
+      - name: MonoTV.py Çalıştır
+        run: |
+          python MonoTV.py
+
+      - name: Değişiklik Kontrolü
+        id: degisiklik_kontrol
+        run: |
           git diff --quiet . || echo "degisiklik=true" >> $GITHUB_OUTPUT
 
-      - name : Depoyu Güncelle
-        if   : steps.degisiklik_kontrol.outputs.degisiklik == 'true'
-        run  : |
+      - name: Değişiklikleri Commit Et
+        if: steps.degisiklik_kontrol.outputs.degisiklik == 'true'
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -m "♻️ Domain Değişikliği" -m "💾 Önceki » $GITHUB_SHA"
+          git add .
+          git commit -m "♻️ Yayın linkleri güncellendi (TRGoals & MonoTV)" -m "🕒 Otomatik işlem - $GITHUB_SHA"
           git push
