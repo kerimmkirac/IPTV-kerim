@@ -18,7 +18,7 @@ class MonoTV:
         try:
             response = self.httpx.get(json_endpoint)
             json_data = response.json()
-            yayin_url = json_data["baseurl"].replace("\\/", "/")
+            yayin_url = json_data["baseurl"].replace("\\/", "/").rstrip("/")
             log.log(f"[green][+] Yayın URL bulundu: {yayin_url}")
             return yayin_url
         except Exception as e:
@@ -30,9 +30,8 @@ class MonoTV:
 
         yeni_yayin_url = self.yayin_urlini_al()
 
-        # Referer'i monotv olanları bul
         pattern = re.compile(
-            r'(#EXTVLCOPT:http-referrer=(https?://[^/]*monotv[^/]*\.[^\s/]+).+?\n)(https?://[^ \n\r]+)', 
+            r'(#EXTVLCOPT:http-referrer=(https?://[^/]*monotv[^/]*\.[^\s/]+).+?\n)(https?://[^ \n\r]+)',
             re.IGNORECASE
         )
 
@@ -48,7 +47,11 @@ class MonoTV:
 
         for eslesme in eslesmeler:
             eski_link = eslesme[3]
-            yeni_link = re.sub(r'https?://[^/]+', yeni_yayin_url, eski_link)
+            # URL'nin path kısmını koruyarak base'ini değiştiriyoruz
+            path_kismi = '/' + '/'.join(eski_link.split('/')[3:])  # /yayint1.m3u8
+            yeni_link = yeni_yayin_url + path_kismi
+            # birden fazla '/' varsa düzelt
+            yeni_link = re.sub(r'(?<!:)//+', '/', yeni_link)
             if eski_link != yeni_link:
                 log.log(f"[blue]• Güncellendi: {eski_link} → {yeni_link}")
                 yeni_icerik = yeni_icerik.replace(eski_link, yeni_link)
