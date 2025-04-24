@@ -218,8 +218,19 @@ https://tjktv-live.tjk.org/tjktv/tjktv.m3u8
 https://tjktv-live.tjk.org/tjktv2/tjktv2.m3u8
 
 
-#EXTINF:-1 tvg-name="NBA TV" tvg-language="English" tvg-country="USA" tvg-id="Spor_NBATV" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/8/89/Nbatv.png" group-title="Spor",NBA TV A
+#EXTINF:-1 tvg-name="NBA TV A" tvg-language="English" tvg-country="USA" tvg-id="Spor_NBATVA" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/8/89/Nbatv.png" group-title="Spor",NBA TV A
 https://ottcdn.kablowebtv.net/live_turksat_sub3/nbatv_stream/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8yNC8yMDI1IDY6NDE6MjEgUE0maGFzaF92YWx1ZT03S202emJmSjh1RjE5a2hkeDdXQklnPT0mdmFsaWRtaW51dGVzPTI4ODAmaWQ9MDkzZDcyMGEtNTAyYy00MWVkLWE4MGYtMmI4MTY5ODRmYjk1LDg5NzQxZmVjLTFkMzMtNGMwMC1hZmNkLTNmZGFmZTBiNmEyZCwxNTJiZDUzOS02MjIwLTQ0MjctYTkxNS1iZjRiZDA2OGQ3ZTgsYTY5OWI4M2YtODI2Yi00ZDk5LTkzNjEtYzhhMzEzMjE4ZDQ2LDAsOjpmZmZmOjEwLjAuMC42
+
+#EXTINF:-1 tvg-name="NBA TV B" tvg-language="English" tvg-country="USA" tvg-id="Spor_NBATVB" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/8/89/Nbatv.png" group-title="Spor",NBA TV B
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5)
+#EXTVLCOPT:http-referrer=https://trgoals1293.xyz/
+https://g0.4928d54d950ee70q27.click/yayinnbatv.m3u8
+
+#EXTINF:-1 tvg-name="NBA TV C" tvg-language="English" tvg-country="USA" tvg-id="Spor_NBATVC" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/8/89/Nbatv.png" group-title="Spor",NBA TV C
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5)
+#EXTVLCOPT:http-referrer=https://monotv523.com/
+https://vvv.mevzuhls33.cfd/yayinnbatv.m3u8
+
 
 
 #EXTINF:-1 tvg-name="Euro Sport 1 A" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_EuroSport1A" tvg-logo="https://w7.pngwing.com/pngs/350/883/png-transparent-eurosport-1-eurosport-2-television-channel-1-euro-television-blue-angle.png" group-title="Spor",Euro Sport 1 A
@@ -471,6 +482,5 @@ https://z3mmimwz148csv0vaxtphqspf.medya.trt.com.tr/master_1080p.m3u8
 # ? #EXTVLCOPT:http-referrer=https://trgoals1293.xyz
 # ? https://j0.4928d54d950ee70q10.click/yayinex6.m3u8
 https://vbtob9hyq58eiophct5qctxr2.medya.trt.com.tr/master_1080p.m3u8
-
 
 
