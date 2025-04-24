@@ -230,6 +230,12 @@ https://g0.4928d54d950ee70q27.click/yayineu1.m3u8
 #EXTINF:-1 tvg-name="Euro Sport 1 B" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_EuroSport1B" tvg-logo="https://w7.pngwing.com/pngs/350/883/png-transparent-eurosport-1-eurosport-2-television-channel-1-euro-television-blue-angle.png" group-title="Spor",Euro Sport 1 B
 https://ottcdn.kablowebtv.net/live_turksat_sub3/eurosport1hd_stream/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8yNC8yMDI1IDk6NTg6MDMgQU0maGFzaF92YWx1ZT1HR0FobzBwaFRYODhiLzNyVVpvT2hRPT0mdmFsaWRtaW51dGVzPTI4ODAmaWQ9MDkzZDcyMGEtNTAyYy00MWVkLWE4MGYtMmI4MTY5ODRmYjk1LDg5NzQxZmVjLTFkMzMtNGMwMC1hZmNkLTNmZGFmZTBiNmEyZCwxNTJiZDUzOS02MjIwLTQ0MjctYTkxNS1iZjRiZDA2OGQ3ZTgsYTY5OWI4M2YtODI2Yi00ZDk5LTkzNjEtYzhhMzEzMjE4ZDQ2LDAsOjpmZmZmOjEwLjAuMC4y
 
+#EXTINF:-1 tvg-name="Euro Sport 1 C" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_EuroSport1C" tvg-logo="https://w7.pngwing.com/pngs/350/883/png-transparent-eurosport-1-eurosport-2-television-channel-1-euro-television-blue-angle.png" group-title="Spor",Euro Sport 1 C
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5)
+#EXTVLCOPT:http-referrer=https://monotv523.com/
+https://vvv.mevzuhls33.cfd/yayineu1.m3u8
+
+
 #EXTINF:-1 tvg-name="Euro Sport 2 A" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_EuroSport2A" tvg-logo="https://w7.pngwing.com/pngs/327/493/png-transparent-eurosport-1-television-channel-logo-eurosport-2-others-miscellaneous-television-text.png" group-title="Spor",Euro Sport 2 A
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5)
 #EXTVLCOPT:http-referrer=https://trgoals1293.xyz
@@ -237,6 +243,12 @@ https://g0.4928d54d950ee70q27.click/yayineu2.m3u8
 
 #EXTINF:-1 tvg-name="Euro Sport 2 B" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_EuroSport2B" tvg-logo="https://w7.pngwing.com/pngs/327/493/png-transparent-eurosport-1-television-channel-logo-eurosport-2-others-miscellaneous-television-text.png" group-title="Spor",Euro Sport 2 B
 https://ottcdn.kablowebtv.net/live_turksat_sub3/eurosport2hd_stream/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8yNC8yMDI1IDk6NTg6MDMgQU0maGFzaF92YWx1ZT1HR0FobzBwaFRYODhiLzNyVVpvT2hRPT0mdmFsaWRtaW51dGVzPTI4ODAmaWQ9MDkzZDcyMGEtNTAyYy00MWVkLWE4MGYtMmI4MTY5ODRmYjk1LDg5NzQxZmVjLTFkMzMtNGMwMC1hZmNkLTNmZGFmZTBiNmEyZCwxNTJiZDUzOS02MjIwLTQ0MjctYTkxNS1iZjRiZDA2OGQ3ZTgsYTY5OWI4M2YtODI2Yi00ZDk5LTkzNjEtYzhhMzEzMjE4ZDQ2LDAsOjpmZmZmOjEwLjAuMC4y
+
+#EXTINF:-1 tvg-name="Euro Sport 2 C" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_EuroSport2C" tvg-logo="https://w7.pngwing.com/pngs/327/493/png-transparent-eurosport-1-television-channel-logo-eurosport-2-others-miscellaneous-television-text.png" group-title="Spor",Euro Sport 2 C
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5)
+#EXTVLCOPT:http-referrer=https://monotv523.com/
+https://vvv.mevzuhls33.cfd/yayineu2.m3u8
+
 
 #EXTINF:-1 tvg-name="Tivibu Spor 1 A" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_TivibuSpor1A" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/qadnsi1642604437.png" group-title="Spor",Tivibu Spor 1 A
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5)
