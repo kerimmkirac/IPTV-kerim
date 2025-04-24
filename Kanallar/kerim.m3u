@@ -300,12 +300,28 @@ https://bcovlive-a.akamaihd.net/540fcb034b144b848e7ff887f61a293a/eu-central-1/64
 #EXTINF:-1 tvg-name="S SPORT 1 B" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_SSPORT1B" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923239.png" group-title="Spor",S SPORT 1 B
 https://ottcdn.kablowebtv.net/live_turksat_sub3/ssport_stream/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8yNC8yMDI1IDc6NTQ6MTkgUE0maGFzaF92YWx1ZT1UMkRGV3BWYkRPYkh3K1RTdmFSUlN3PT0mdmFsaWRtaW51dGVzPTI4ODAmaWQ9MDkzZDcyMGEtNTAyYy00MWVkLWE4MGYtMmI4MTY5ODRmYjk1LDg5NzQxZmVjLTFkMzMtNGMwMC1hZmNkLTNmZGFmZTBiNmEyZCwxNTJiZDUzOS02MjIwLTQ0MjctYTkxNS1iZjRiZDA2OGQ3ZTgsYTY5OWI4M2YtODI2Yi00ZDk5LTkzNjEtYzhhMzEzMjE4ZDQ2LDAsOjpmZmZmOjEwLjAuMC42
 
+#EXTINF:-1 tvg-name="S SPORT 1 C" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_SSPORT1C" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923239.png" group-title="Spor",S SPORT 1 C
+#EXTVLCOPT:http-referrer=https://trgoals1293.xyz
+https://g0.4928d54d950ee70q27.click/yayinss.m3u8
+
+#EXTINF:-1 tvg-name="S SPORT 1 D" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_SSPORT1D" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923239.png" group-title="Spor",S SPORT 1 D
+#EXTVLCOPT:http-referrer=https://monotv523.com/
+https://vvv.mevzuhls33.cfd/yayinss.m3u8
+
 #EXTINF:-1 tvg-name="S SPORT 2 A" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_SSPORT2A" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923321.png" group-title="Spor",S SPORT 2 A
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5)
 https://bcovlive-a.akamaihd.net/29c60f23ea4840ba8726925a77fcfd0b/eu-central-1/6415845530001/profile_0/chunklist.m3u8
 
 #EXTINF:-1 tvg-name="S SPORT 2 B" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_SSPORT2B" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923321.png" group-title="Spor",S SPORT 2 B
 https://ottcdn.kablowebtv.net/live_turksat_sub3/ssport2_stream/index.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8yNC8yMDI1IDc6NTQ6MTkgUE0maGFzaF92YWx1ZT1UMkRGV3BWYkRPYkh3K1RTdmFSUlN3PT0mdmFsaWRtaW51dGVzPTI4ODAmaWQ9MDkzZDcyMGEtNTAyYy00MWVkLWE4MGYtMmI4MTY5ODRmYjk1LDg5NzQxZmVjLTFkMzMtNGMwMC1hZmNkLTNmZGFmZTBiNmEyZCwxNTJiZDUzOS02MjIwLTQ0MjctYTkxNS1iZjRiZDA2OGQ3ZTgsYTY5OWI4M2YtODI2Yi00ZDk5LTkzNjEtYzhhMzEzMjE4ZDQ2LDAsOjpmZmZmOjEwLjAuMC42
+
+#EXTINF:-1 tvg-name="S SPORT 2 C" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_SSPORT2C" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923321.png" group-title="Spor",S SPORT 2 C
+#EXTVLCOPT:http-referrer=https://trgoals1293.xyz
+https://g0.4928d54d950ee70q27.click/yayinss2.m3u8
+
+#EXTINF:-1 tvg-name="S SPORT 2 D" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_SSPORT2D" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923321.png" group-title="Spor",S SPORT 2 D
+#EXTVLCOPT:http-referrer=https://monotv523.com/
+https://vvv.mevzuhls33.cfd/yayinss2.m3u8
 
 #EXTINF:-1 tvg-name="S sport 3 | A" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_SSPORT3A" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923321.png" group-title="Spor",S SPORT 3 A
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5)
