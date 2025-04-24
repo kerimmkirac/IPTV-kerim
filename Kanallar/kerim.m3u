@@ -278,18 +278,25 @@ https://g0.4928d54d950ee70q27.click/yayint4.m3u8
 #EXTVLCOPT:http-referrer=https://monotv523.com/
 https://vvv.mevzuhls33.cfd/yayint4.m3u8
 
-#EXTINF:-1 tvg-name="Spor Smart | A" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_SporSmart_A" tvg-logo="https://dsmart-static-v2.ercdn.net//resize-width/1920/content/p/el/11909/Thumbnail.png" group-title="Spor",Spor Smart A
+#EXTINF:-1 tvg-name="Spor Smart 1 | A" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_SporSmart_1A" tvg-logo="https://dsmart-static-v2.ercdn.net//resize-width/1920/content/p/el/11909/Thumbnail.png" group-title="Spor",Spor Smart 1 A
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5)
 #EXTVLCOPT:http-referrer=https://trgoals1293.xyz
 https://g0.4928d54d950ee70q27.click/yayinsmarts.m3u8
 
-
+#EXTINF:-1 tvg-name="Spor Smart 1 | B" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_SporSmart_1B" tvg-logo="https://dsmart-static-v2.ercdn.net//resize-width/1920/content/p/el/11909/Thumbnail.png" group-title="Spor",Spor Smart 1 B
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5)
+#EXTVLCOPT:http-referrer=https://monotv523.com/
+https://vvv.mevzuhls33.cfd/yayinsmarts.m3u8
 
 #EXTINF:-1 tvg-name="Spor Smart 2 | A" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_SporSmart2_A" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/SPORSMART2-gri.png" group-title="Spor",Spor Smart 2 A
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5)
 #EXTVLCOPT:http-referrer=https://trgoals1293.xyz
 https://g0.4928d54d950ee70q27.click/yayinsms2.m3u8
 
+#EXTINF:-1 tvg-name="Spor Smart 2 | B" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_SporSmart2_B" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/SPORSMART2-gri.png" group-title="Spor",Spor Smart 2 B
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5)
+#EXTVLCOPT:http-referrer=https://monotv523.com/
+https://vvv.mevzuhls33.cfd/yayinsms2.m3u8
 
 
 
@@ -380,7 +387,7 @@ https://vvv.mevzuhls33.cfd/yayinb4.m3u8
 #EXTVLCOPT:http-referrer=https://trgoals1293.xyz
 https://g0.4928d54d950ee70q27.click/yayinb5.m3u8
 
-#EXTINF:-1 tvg-name="beIN SPORTS 5 | B" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_beINSPORTS5_b" tvg-logo="https://i.imgur.com/iRKfaee.png" group-title="Spor",beIN SPORTS 5 b
+#EXTINF:-1 tvg-name="beIN SPORTS 5 | B" tvg-language="Turkish" tvg-country="TR" tvg-id="Spor_beINSPORTS5_b" tvg-logo="https://i.imgur.com/iRKfaee.png" group-title="Spor",beIN SPORTS 5 B
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5)
 #EXTVLCOPT:http-referrer=https://monotv523.com/
 https://vvv.mevzuhls33.cfd/yayinb5.m3u8
