@@ -1,4 +1,3 @@
-# ! Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
 from Kekik.cli import konsol
 from httpx     import Client
@@ -8,13 +7,7 @@ import re
 class TRGoals:
     def __init__(self, m3u_dosyasi):
         self.m3u_dosyasi = m3u_dosyasi
-        self.httpx = Client(
-    timeout=10,
-    headers={
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/122 Safari/537.36"
-    }
-)
-
+        self.httpx       = Client(timeout=10)
 
     def referer_domainini_al(self):
         referer_deseni = r'#EXTVLCOPT:http-referrer=(https?://[^/]*trgoals[^/]*\.[^\s/]+)'
@@ -28,8 +21,22 @@ class TRGoals:
 
     def trgoals_domaini_al(self):
         redirect_url = "https://bit.ly/m/taraftarium24w"
-        while "bit.ly" in redirect_url:
-            redirect_url = self.redirect_gec(redirect_url)
+        deneme = 0
+        while "bit.ly" in redirect_url and deneme < 5:
+            try:
+                redirect_url = self.redirect_gec(redirect_url)
+            except Exception as e:
+                konsol.log(f"[red][!] redirect_gec hata: {e}")
+                break
+            deneme += 1
+
+        if "bit.ly" in redirect_url or "error" in redirect_url:
+            konsol.log("[yellow][!] 5 denemeden sonra bit.ly çözülemedi, yedek linke geçiliyor...")
+            try:
+                redirect_url = self.redirect_gec("https://t.co/aOAO1eIsqE")
+            except Exception as e:
+                raise ValueError(f"Yedek linkten de domain alınamadı: {e}")
+
         return redirect_url
 
     def redirect_gec(self, redirect_url: str):
@@ -38,11 +45,14 @@ class TRGoals:
             response = self.httpx.get(redirect_url, follow_redirects=True)
         except Exception as e:
             raise ValueError(f"Redirect sırasında hata oluştu: {e}")
-    
-        domain = str(response.url).strip("/")
-        if "error" in domain:
-            raise ValueError("Redirect domain hatalı..")
-        return domain
+
+        tum_url_listesi = [str(r.url) for r in response.history] + [str(response.url)]
+
+        for url in tum_url_listesi[::-1]:
+            if "trgoals" in url:
+                return url.strip("/")
+
+        raise ValueError("Redirect zincirinde 'trgoals' içeren bir link bulunamadı!")
 
     def yeni_domaini_al(self, eldeki_domain: str) -> str:
         def check_domain(domain: str) -> str:
@@ -51,21 +61,17 @@ class TRGoals:
             return domain
 
         try:
-            # İlk kontrol: Redirect geçiş
             yeni_domain = check_domain(self.redirect_gec(eldeki_domain))
         except Exception:
             konsol.log("[red][!] `redirect_gec(eldeki_domain)` fonksiyonunda hata oluştu.")
             try:
-                # İkinci kontrol: trgoals domainini al
                 yeni_domain = check_domain(self.trgoals_domaini_al())
             except Exception:
                 konsol.log("[red][!] `trgoals_domaini_al` fonksiyonunda hata oluştu.")
                 try:
-                    # Üçüncü kontrol: Alternatif bir URL üzerinden redirect geç
                     yeni_domain = check_domain(self.redirect_gec("https://t.co/MTLoNVkGQN"))
                 except Exception:
                     konsol.log("[red][!] `redirect_gec('https://t.co/MTLoNVkGQN')` fonksiyonunda hata oluştu.")
-                    # Son çare: Yeni bir domain üret
                     rakam = int(eldeki_domain.split("trgoals")[1].split(".")[0]) + 1
                     yeni_domain = f"https://trgoals{rakam}.xyz"
 
@@ -89,18 +95,23 @@ class TRGoals:
         eski_yayin_url = eski_yayin_url[0]
         konsol.log(f"[yellow][~] Eski Yayın URL : {eski_yayin_url}")
 
-        # API çağrısı kaldırıldı, doğrudan istek yapılıyor
         response = self.httpx.get(kontrol_url, follow_redirects=True)
 
-        if not (yayin_ara := re.search(r'var baseurl = "(https?:\/\/[^"]+)"', response.text)):
+        yayin_ara = re.search(r'var baseurl = "(https?:\/\/[^"]+)"', response.text)
+        if not yayin_ara:
+            iframe_ara = re.search(r'<iframe[^>]+src="(https?:\/\/[^"]+\.m3u8[^"]*)"', response.text)
+            if iframe_ara:
+                yayin_ara = [None, iframe_ara[1]]
+
+        if not yayin_ara:
             secici = Selector(response.text)
             baslik = secici.xpath("//title/text()").get()
             if baslik == "404 Not Found":
                 yeni_domain = eldeki_domain
-                yayin_ara   = [None, eski_yayin_url]
+                yayin_ara = [None, eski_yayin_url]
             else:
                 konsol.print(response.text)
-                raise ValueError("Base URL bulunamadı!")
+                raise ValueError("Base URL veya iframe bulunamadı!")
 
         yayin_url = yayin_ara[1]
         konsol.log(f"[green][+] Yeni Yayın URL : {yayin_url}")
