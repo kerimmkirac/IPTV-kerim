@@ -1,3 +1,4 @@
+# ! Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
 from Kekik.cli import konsol
 from httpx     import Client
@@ -7,7 +8,12 @@ import re
 class TRGoals:
     def __init__(self, m3u_dosyasi):
         self.m3u_dosyasi = m3u_dosyasi
-        self.httpx       = Client(timeout=10)
+        self.httpx       = Client(
+            timeout=10,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+            }
+        )
 
     def referer_domainini_al(self):
         referer_deseni = r'#EXTVLCOPT:http-referrer=(https?://[^/]*trgoals[^/]*\.[^\s/]+)'
